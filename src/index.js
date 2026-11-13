@@ -275,6 +275,8 @@ function checkPatternMatch() {
       if (matchesPattern(startRow, startCol)) {
         clearPattern(startRow, startCol);
         score += 100;
+        linesCleared++;
+        level = Math.floor(linesCleared/10)+1;
         updateScore();
         setNewTargetPattern();
         return;
