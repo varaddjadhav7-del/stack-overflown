@@ -319,6 +319,7 @@ function updateScore() {
     document.getElementById("high-score").textContent = highScore;
     localStorage.setItem("stackOverflowHighScore", highScore);
   }
+  document.getElementByld("level").textContent=level;
 }
 
 // Handle keyboard input
